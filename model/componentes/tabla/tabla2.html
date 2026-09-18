@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/estilos.css">
+        <script src="js/tabla2.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container mt-5">
+                <div class="row">
+                    <h1 class="text-center text-white">Calculo de bebidas</h1>
+                    <div class="col-12 mt-5">
+                        <div class="row">
+                            <div class="col-12 col-xl-6">
+                                <h3 class="text-white">Nombre de la bebida: <span id="nombreBebida"></span></h3>
+
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="mb-3">
+                            <input
+                                type="date"
+                                class="form-control"
+                                name=""
+                                id=""
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                            </div>
+                        </div>
+                        
+                        
+
+<div
+    class="table-responsive mt-5"
+>
+    <table class="table border table-bordered"
+    >
+        <thead class="table-dark border">
+            <tr>
+                <th scope="col"> <img src="img/763072.png" class="img-fluid" width="30%" alt=""> <span class="ms-1">Bebidas</span></th>
+                <th scope="col"><img src="img/763072.png" class="img-fluid" width="30%" alt=""><span class="ms-1">Cantidad</span></th>
+                <th scope="col"><img src="img/763072.png" class="img-fluid" width="30%" alt=""><span class="ms-1">Trago existente</span></th>
+                <th scope="col"><img src="img/763072.png" class="img-fluid" width="30%" alt=""><span class="ms-1">Tragos vendidos</span></th>
+                <th scope="col"><img src="img/763072.png" class="img-fluid" width="30%" alt=""><span class="ms-1">Tragos actuales</span></th>
+                <th scope="col"><img src="img/763072.png" class="img-fluid" width="30%" alt=""><span class="ms-1">Stock</span></th>
+                <th scope="col"><img src="img/763072.png" class="img-fluid" width="30%" alt=""><span class="ms-1">Previsión</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="border">
+                <td  class="p-5"><img src="img/62821.png" class="img-fluid" width="60%"></td>
+                <td  class="p-5" id="cantidad"></td>
+                <td  class="p-5" id="ventas"></td>
+                <td  class="p-5" id="tragosExistente"></td>
+                <td  class="p-5" id="tragosActual"></td>
+                <td  class="p-5" id="stock">8 tragos</td>
+                <td  class="p-5" id="prevision"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="text-end"><button class="btn btn-primary" onclick="calcular()">Calcular</button></div>
+</div>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

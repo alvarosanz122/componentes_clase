@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <script src="js/tabla1.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container mt-5">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <h1 class="text-center">Planifica tu semana</h1>
+                        <div class="table-responsive">
+                            <table
+                                class="table mt-5 table-bordered border-primary"
+                            >
+                                <thead class="table-primary">
+                                    <tr>
+                                        <th scope="col">Domingo</th>
+                                        <th scope="col">Lunes</th>
+                                        <th scope="col">Martes</th>
+                                        <th scope="col">Miercoles</th>
+                                        <th scope="col">Jueves</th>
+                                        <th scope="col">Viernes</th>
+                                        <th scope="col">Sabado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td scope="row" id="actividadDomingo" class="p-5"></td>
+                                        <td id="actividadLunes" class="p-5"></td>
+                                        <td id="actividadMartes" class="p-5"></td>
+                                        <td id="actividadMiercoles" class="p-5"></td>
+                                        <td id="actividadJueves" class="p-5"></td>
+                                        <td id="actividadViernes" class="p-5"></td>
+                                        <td id="actividadSabado" class="p-5"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div>
+
+                            <div
+                                class="table-responsive"
+                            >
+                                <table
+                                    class="table table-borderless"
+                                >
+                                    <thead>
+                                        <tr>
+                                            <th id="planificacion" scope="col"><button onclick="planificacion()"
+                            type="button" class="btn btn-danger"
+                            >Planificar
+                            </button></th>
+                                            <th id="imprimir" scope="col" class="text-end"><button
+                             type="button" class="btn btn-primary text-end" onclick="imprimir()"
+                            >imprimir</button></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            
+
+
+                            
+
+
+
+                            
+                        </div>
+                         
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

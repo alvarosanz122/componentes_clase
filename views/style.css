@@ -1,0 +1,29 @@
+.login{
+    margin-top: 15%; 
+    width: 25%;
+}
+
+.body-principal{
+ 
+background-image: url("../views/img/angular2.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+min-height: 100vh;
+margin: 0;
+}
+
+.enlace{
+    text-decoration: none;
+    color: black;
+}
+
+@media (width < 1087px){
+.login{
+margin-top: 15%;
+width: 100%;
+
+}
+
+}
