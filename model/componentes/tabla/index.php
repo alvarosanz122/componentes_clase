@@ -14,7 +14,7 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="css/estilos.css">
-        <script src="js/tabla2.js"></script>
+        
     </head>
 
     <body>
@@ -33,9 +33,8 @@
     <!-- Modal trigger button -->
     <button
         type="button"
-        class="btn btn-primary btn-lg mt-2"
-        data-bs-toggle="modal"
-        data-bs-target="#modalId"
+        class="btn btn-primary btn-lg mt-2 botonTabla"
+        data-id="1"
     >
         Descripción
     </button>
@@ -59,9 +58,6 @@
         >
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitleId">
-                        Modal title
-                    </h5>
                     <button
                         type="button"
                         class="btn-close"
@@ -75,8 +71,8 @@
                       <div class="row">
                         <div class="col-xl-6 col-12">
                             <div class="card border-dark">
-                                <h6 class="text-center">Planifica tu semana</h6>
-                                <img class="card-img-top" src="img/tabla-dinamica-01.jpg" alt="Title" />
+                                <h6 class="text-center" id="tituloModal"></h6>
+                                <img class="card-img-top" id="imagenModal" src="" alt="Title" />
                                 <div class="card-body">
                                     <h6 class="card-title">Tecnologías Utilizadas</h6>
                                     <p class="card-text">
@@ -104,6 +100,8 @@
     <tr>
       <th class="text-end"><a href="https://github.com/alvarosanz122/tabla_planificacion_actividades"><i class="bi bi-github text-primary"></i></a></th>
       <td class="text-start">GitHub</td>
+      <th class="text-end"><a href="" id="demoModal"><i class="bi bi-file-earmark text-primary"></i></a></th>
+      <td class="text-start">Ver demo</td>
     </tr>
   </tbody> 
 </table>
@@ -125,13 +123,13 @@
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
+      <div class="accordion-body" id="descripcionModal">
        
       </div>
     </div>
 
   </div>
-   <a href="tabla1.html" target="_blank" class="bg-success btn mt-5">Descargar gratis</a>
+   <a  target="_blank" class="btn mt-5"><img src="img/descargar.png" class="img-fluid w-50" alt=""></a>
 </div>
 
 
@@ -150,7 +148,7 @@
                     >
                         Cerrar
                     </button>
-                    <a href="descargar.php?archivo=pagina1" class="btn btn-primary">Descargar</a>
+                    <a href="" id="descargaModal" class="btn btn-primary">Descargar</a>
                 </div>
             </div>
         </div>
@@ -179,8 +177,8 @@
         <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Calculo de Bebida </span><br>
        <button
         type="button"
-        class="btn btn-primary btn-lg mt-2"
-        id="botonBebidad"
+        class="btn btn-primary btn-lg mt-2 botonTabla"
+        data-id="2"
     >
         Descripción
     </button>
@@ -189,9 +187,16 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="../views/img/aplicaciones.jpg" class="card-img-top h-100" alt="...">
+      <img src="img/tabla-dinamica-03.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"><a href="#" class="enlace" ><button class="btn btn-primary">App</button></a></h5>
+        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Insertar registro </span><br>
+       <button
+        type="button"
+        class="btn btn-primary btn-lg mt-2 botonTabla"
+        data-id="3"
+    >
+        Descripción
+    </button>
       </div>
     </div>
   </div>
@@ -212,6 +217,7 @@
         </footer>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script src="js/modal.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

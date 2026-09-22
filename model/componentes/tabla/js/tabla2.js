@@ -36,8 +36,3 @@ document.getElementById("prevision").innerHTML = prevision;
 
 
 
-const boton = document.querySelector('#botonBebidad');
-
-boton.addEventListener('click', () => {
-  alert('¡Hiciste clic!');
-});
