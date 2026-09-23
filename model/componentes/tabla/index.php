@@ -80,11 +80,11 @@
 
                                         <table class="table table-borderless d-flex justify-content-center">
   
-<<<<<<< HEAD
+
   <tbody>
-=======
+
   <tbody id="tecnologiasModal">
->>>>>>> f4ea778 (Primer commit)
+
     <tr>
       <th class="text-end"><i class="bi bi-filetype-html"></i></th>
       <td class="text-start">Html</td>

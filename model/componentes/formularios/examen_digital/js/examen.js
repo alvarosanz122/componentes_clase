@@ -1,11 +1,41 @@
 function mensaje() {
     if (confirm("Esta seguro que quiere continuar")) {
-        const formulario = document.getElementById('miFormulario');
-        formulario.submit();
+     var nombreEstudiante = document.registroEstudiante.nombreEstudiante.value;
+     var identificacionEstudiante = document.registroEstudiante.identificacionEstudiante.value;
+     var respuesta1 = document.registroEstudiante.respuesta1.value;
+     var respuesta2 = document.registroEstudiante.respuesta2.value;
+     var respuesta3 = document.registroEstudiante.respuesta3.value;
+     var respuesta4 = document.registroEstudiante.respuesta4.value;
+     var respuesta5 = document.registroEstudiante.respuesta5.value;
+     
+     const datos = {nombreEstudiante: nombreEstudiante,identificacionEstudiante: identificacionEstudiante,respuesta1: respuesta1,respuesta2: respuesta2,respuesta3: respuesta3,respuesta4: respuesta4,respuesta5: respuesta5};
+     
+     const text = JSON.stringify(datos);
+
+        fetch("correcion.php", {
+             method: "POST",
+             headers: {"Content-Type": "application/json"},
+             body: text
+        })
+            .then(response => response.text())
+            .then(respuesta => {
+                var res = JSON.parse(respuesta);
+
+                if(res['res'] === 'ok') {
+                    alert(res['message']);
+                    location.reload();
+                }else{
+                  alert(res['message']);   
+                }
+            })
+            .catch(error => {
+              alert("Error AJAX:", error);
+             });
+            
     } else {
         alert("Envio del examen cancelado");
     }
-    
+
 }
 
 

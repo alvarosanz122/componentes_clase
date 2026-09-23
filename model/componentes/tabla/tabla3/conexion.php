@@ -1,6 +1,6 @@
 <?php
 
-$conexion = mysqli_connect("localhost","root","","tabla3") or die ("Error en la conexión");
+$conexion = mysqli_connect("127.0.0.1:3307","root","","tabla3") or die ("Error en la conexión");
 
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];

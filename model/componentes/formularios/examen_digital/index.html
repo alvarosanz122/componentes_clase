@@ -86,7 +86,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center"><i class="bi bi-pencil-square text-white"></i><span class="ms-1">Examen Digital</span></h1>
-                    <form id="miFormulario" action="correcion.php" method="post">
+                    <form id="registroEstudiante" name="registroEstudiante" method="post">
                          
                         <div class="row d-flex justify-content-center p-5">
                             <div class="col-xxl-2 col-xl-7 col-12">
@@ -99,6 +99,8 @@
                                         id="nombreEstudiante"
                                         aria-describedby="helpId"
                                         placeholder=""
+                                        value=""
+                                         required
                                     />
                                 </div>
 
@@ -112,7 +114,7 @@
                                         name="identificacionEstudiante"
                                         id="identificacionEstudiante"
                                         aria-describedby="helpId"
-                                        placeholder=""
+                                        placeholder="" required
                                     />
                                 </div>
 
@@ -120,7 +122,7 @@
                             <div class="col-xl-7 col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta1" id="" rows="3"></textarea>
+                                    <textarea class="form-control" name="respuesta1" id="respuesta1" rows="3" required></textarea>
                                 </div>
 
 
@@ -128,7 +130,7 @@
                             <div class="col-xl-7 col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta2" id="" rows="3"></textarea>
+                                    <textarea class="form-control" name="respuesta2" id="respuesta2" rows="3" required></textarea>
                                 </div>
 
 
@@ -136,7 +138,7 @@
                             <div class="col-xl-7 col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta3" id="" rows="3"></textarea>
+                                    <textarea class="form-control" name="respuesta3" id="respuesta3" rows="3" required></textarea>
                                 </div>
 
 
@@ -144,7 +146,7 @@
                             <div class="col-xl-7 col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta4" id="" rows="3"></textarea>
+                                    <textarea class="form-control" name="respuesta4" id="respuesta4" rows="3" required></textarea>
                                 </div>
 
 
@@ -152,7 +154,7 @@
                             <div class="col-xl-7 col-12">
                                 <div class="mb-3">
                                     <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta5" id="" rows="3"></textarea>
+                                    <textarea class="form-control" name="respuesta5" id="respuesta5" rows="3" required></textarea>
                                 </div>
 
                                 <button type="button" id="btnEnviar" class="btn btn-primary float-start"

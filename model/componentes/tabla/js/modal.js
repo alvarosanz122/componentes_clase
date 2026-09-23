@@ -1,15 +1,10 @@
 const botones = document.querySelectorAll('.botonTabla');
 
 let arra = {
-<<<<<<< HEAD
+
   "1": ["Planifica tu semana", "img/tabla-dinamica-01.jpg","En esta tabla el usuario podra planificar sus activiadades de la semana y crear su propio calendario de tareas semanales.","descargar.php?archivo=pagina1","tabla1.html"],
   "2": ["Calculo de Bebida", "img/tabla-dinamica-02.jpg","Bebidas","descargar.php?archivo=pagina2","tabla2.html"],
   "3": ["Insertar Registro", "img/tabla-dinamica-03.jpg","Registro","descargar.php?archivo=pagina3","tabla3/tabla3.html"]
-=======
-  "1": ["Planifica tu semana", "img/tabla-dinamica-01.jpg","En esta tabla el usuario podra planificar sus activiadades de la semana y crear su propio calendario de tareas semanales.","descargar.php?archivo=pagina1","tabla1.html","html,javascript,bootstrap"],
-  "2": ["Calculo de Bebida", "img/tabla-dinamica-02.jpg","Bebidas","descargar.php?archivo=pagina2","tabla2.html","html,javascript,bootstrap"],
-  "3": ["Insertar Registro", "img/tabla-dinamica-03.jpg","Registro","descargar.php?archivo=pagina3","tabla3/tabla3.html","html,javascript,php,bootstrap"]
->>>>>>> f4ea778 (Primer commit)
 }; 
 
 botones.forEach(boton => {
@@ -37,11 +32,8 @@ Object.entries(arra2).forEach(function([indice, value]) {
     }else if(value === "href"){
         document.getElementById(indice).href = arra[id][cont];
     }else{
-<<<<<<< HEAD
         document.getElementById(indice).innerHTML=arra[id][cont];
-=======
-        document.getElementById(indice).innerHTML = arra[id][cont];
->>>>>>> f4ea778 (Primer commit)
+
     }
     cont++;
 });
