@@ -51,7 +51,7 @@
                         <tbody>
                                 <?php 
                                 $cont = 0;
-                                $conexion = mysqli_connect("127.0.0.1:3307","root","","tabla3");
+                                $conexion = mysqli_connect("localhost","root","","tabla3");
                                 $consulta = mysqli_query($conexion,"SELECT nombre,apellido,telefono,correo,direccion FROM registros");
                                
                                 while($ar = mysqli_fetch_assoc($consulta)){
@@ -68,7 +68,7 @@
                     </table>
 
                     <?php 
-                    $conexion = mysqli_connect("127.0.0.1:3307","root","","tabla3");
+                    $conexion = mysqli_connect("localhost","root","","tabla3");
                     $registros = mysqli_query($conexion,"SELECT COUNT(*) as contador FROM registros");
 
                     $ar = mysqli_fetch_assoc($registros);

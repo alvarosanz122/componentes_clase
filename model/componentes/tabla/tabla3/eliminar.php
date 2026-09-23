@@ -1,5 +1,5 @@
 <?php
-$conexion = mysqli_connect("127.0.0.1:3307","root","","tabla3");
+$conexion = mysqli_connect("localhost","root","","tabla3");
 $email = $_POST['email'];
 $sanitized_email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
