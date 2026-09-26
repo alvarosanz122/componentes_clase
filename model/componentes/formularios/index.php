@@ -22,14 +22,14 @@
 
         </header>
         <main>
-            <h1 class="text-center mt-5"> <i class="bi bi-table fs-1"></i><br> Tablas dinamicas</h1>
+            <h1 class="text-center mt-5"> <i class="bi bi-layout-text-window"></i><br> Formularios</h1>
             <div class="container mt-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
-      <img src="img/tabla-dinamica-01.jpg" class="card-img-top h-100 img-fluid" alt="...">
+      <img src="img/plantilla_formulario_hospital.png" class="card-img-top h-100 img-fluid" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Planificación de Actividades </span><br>
+        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Formulario medico </span><br>
     <!-- Modal trigger button -->
     <button
         type="button"
@@ -98,9 +98,9 @@
       <td class="text-start">Bootstrap</td>
     </tr>
     <tr>
-      <th class="text-end"><a href="https://github.com/alvarosanz122/tabla_planificacion_actividades"><i class="bi bi-github text-primary"></i></a></th>
+      <th class="text-end"><a target="_blank" href="#" id="gitModal"><i class="bi bi-github text-primary"></i></a></th>
       <td class="text-start">GitHub</td>
-      <th class="text-end"><a href="" id="demoModal"><i class="bi bi-file-earmark text-primary"></i></a></th>
+      <th class="text-end"><a href="#"  target="_blank" id="demoModal"><i class="bi bi-file-earmark text-primary"></i></a></th>
       <td class="text-start">Ver demo</td>
     </tr>
   </tbody> 
@@ -174,7 +174,7 @@
     <div class="card h-100">
       <img src="img/tabla-dinamica-02.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Calculo de Bebida </span><br>
+        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Buscador </span><br>
        <button
         type="button"
         class="btn btn-primary btn-lg mt-2 botonTabla"
@@ -187,9 +187,9 @@
   </div>
   <div class="col">
     <div class="card h-100">
-      <img src="img/tabla-dinamica-03.jpg" class="card-img-top h-100" alt="...">
+      <img src="img/plantilla_fomulario_examan_digital.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Insertar registro </span><br>
+        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Examen digital </span><br>
        <button
         type="button"
         class="btn btn-primary btn-lg mt-2 botonTabla"

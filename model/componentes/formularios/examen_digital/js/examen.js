@@ -54,3 +54,63 @@ function clave() {
 function cambioPlan() {
     alert("entra");
 }
+
+const botones = document.querySelectorAll('.botonFormulario');
+
+const miModal = document.getElementById('modalId');
+ 
+botones.forEach(boton => {
+  boton.addEventListener('click', () => {
+
+    const id = boton.dataset.id;
+    const name = boton.dataset.name;
+
+    const modal = new bootstrap.Modal(
+      document.querySelector('#modalId')
+    );
+
+    modal.show();
+    document.getElementById("nombreAlum").innerHTML = name;
+    document.getElementById("idOculto").value = id;
+
+  });
+}); 
+
+
+
+function validar(){
+
+    var idOculto = document.examen.idOculto.value;
+    var notaExamen = document.examen.nota1.value;
+
+    const datos = {idOculto:idOculto,notaExamen:notaExamen};
+     
+     const text = JSON.stringify(datos);
+
+     fetch("notas.php", {
+             method: "POST",
+             headers: {"Content-Type": "application/json"},
+             body: text
+        })
+            .then(response => response.text())
+            .then(respuesta => {
+                var res = JSON.parse(respuesta);
+
+                if(res['res'] === 'ok') {
+                    alert(res['message']);
+                    const modal = bootstrap.Modal.getInstance(document.getElementById('modalId'));
+                    modal.hide();
+                    location.reload();
+                }else{
+                  alert(res['message']);   
+                }
+            })
+            .catch(error => {
+              alert("Error AJAX:", error);
+             });
+}
+
+miModal.addEventListener('close', () => {
+    console.log('El modal acaba de cerrarse');
+});
+ 
