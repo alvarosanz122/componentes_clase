@@ -102,9 +102,9 @@
       <td class="text-start">Bootstrap</td>
     </tr>
     <tr>
-      <th class="text-end"><a href="https://github.com/alvarosanz122/tabla_planificacion_actividades"><i class="bi bi-github text-primary"></i></a></th>
+      <th class="text-end"><a target="_blank" href="https://github.com/alvarosanz122/tabla_planificacion_actividades"><i class="bi bi-github text-primary"></i></a></th>
       <td class="text-start">GitHub</td>
-      <th class="text-end"><a href="" id="demoModal"><i class="bi bi-file-earmark text-primary"></i></a></th>
+      <th class="text-end"><a href="#" target="_blank" id="demoModal"><i class="bi bi-file-earmark text-primary"></i></a></th>
       <td class="text-start">Ver demo</td>
     </tr>
   </tbody> 

@@ -86,6 +86,35 @@
             <div class="row">
                 <div class="col-12">
                     <h1 class="text-center"><i class="bi bi-pencil-square text-white"></i><span class="ms-1">Examen Digital</span></h1>
+                    <?php
+                    $preguntas = '';
+                    $cont = 1;
+                     $conexion = mysqli_connect("127.0.0.1:3307","root","","examen") or die ("Error en la conexión");
+                     $consulta = mysqli_query($conexion,'SELECT * FROM preguntas LIMIT 1') OR die("error de consulta".mysqli_error($conexion));
+                        while($ar = mysqli_fetch_array($consulta)){
+                            foreach($ar as $indice => $value){
+                                if(!is_numeric($indice) &&  $indice!= 'id_examen'){
+                                     $preguntas .='<div class="col-xl-7 col-12">
+                                <div class="mb-3">
+                                    <label for="" class="form-label fw-bold">Pregunta'.$cont.': '.$value.'</label>
+                                    <textarea class="form-control" name="respuesta'.$cont.'" id="respuesta'.$cont.'" rows="3" required></textarea>
+                                </div>
+
+
+                            </div>';
+                                $cont++;
+                                }
+                               
+                            }
+                                
+                            $preguntas.='<input type="hidden" id="idOculto" value="'.$ar['id_examen'].'">';
+                        }
+                    mysqli_close($conexion);
+                   ?>
+
+
+
+
                     <form id="registroEstudiante" name="registroEstudiante" method="post">
                          
                         <div class="row d-flex justify-content-center p-5">
@@ -119,44 +148,10 @@
                                 </div>
 
                             </div>
+                            
+                            <?php echo $preguntas; ?>
+                            
                             <div class="col-xl-7 col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta1" id="respuesta1" rows="3" required></textarea>
-                                </div>
-
-
-                            </div>
-                            <div class="col-xl-7 col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta2" id="respuesta2" rows="3" required></textarea>
-                                </div>
-
-
-                            </div>
-                            <div class="col-xl-7 col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta3" id="respuesta3" rows="3" required></textarea>
-                                </div>
-
-
-                            </div>
-                            <div class="col-xl-7 col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta4" id="respuesta4" rows="3" required></textarea>
-                                </div>
-
-
-                            </div>
-                            <div class="col-xl-7 col-12">
-                                <div class="mb-3">
-                                    <label for="" class="form-label"></label>
-                                    <textarea class="form-control" name="respuesta5" id="respuesta5" rows="3" required></textarea>
-                                </div>
-
                                 <button type="button" id="btnEnviar" class="btn btn-primary float-start"
                                     onclick="mensaje()">Enviar</button>
                                 <button type="submit"  class="btn btn-danger float-end">Borrar</button>

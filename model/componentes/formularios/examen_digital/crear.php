@@ -55,9 +55,8 @@
                                     class="dropdown-menu"
                                     aria-labelledby="dropdownId"
                                 >
-                                    <a class="dropdown-item" href="crear.html"
-                                        >Crear examen</a
-                                    >
+                                    <a class="dropdown-item" href="entrega.php"
+                                        >Evaluación de Examen</a>
                                 </div>
                             </li>
                         </ul>
@@ -79,10 +78,81 @@
             </nav>
             
         </header>
-        <main></main>
+        <main>
+            <div class="container mt-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-xl-6">
+                        <form name="examenClase" method="post">
+                        <div class="mb-3">
+                            <label for="" class="form-label">Pregunta 1:</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="pregunta1"
+                                id="pregunta1"
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                         <div class="mb-3">
+                            <label for="" class="form-label">Pregunta 2:</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="pregunta2"
+                                id="pregunta2"
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                         <div class="mb-3">
+                            <label for="" class="form-label">Pregunta 3:</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="pregunta3"
+                                id="pregunta3"
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                         <div class="mb-3">
+                            <label for="" class="form-label">Pregunta 4:</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="pregunta4"
+                                id="pregunta4"
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                         <div class="mb-3">
+                            <label for="" class="form-label">Pregunta 5:</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                name="pregunta5"
+                                id="pregunta5"
+                                aria-describedby="helpId"
+                                placeholder=""
+                            />
+                        </div>
+                        <button type="button" class="btn btn-primary float-end" onclick="crearExamen()">Crear</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </main>
         <footer>
             <!-- place footer here -->
         </footer>
+        <script src="js/examen.js"></script>
         <!-- Bootstrap JavaScript Bundle (includes Popper) -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

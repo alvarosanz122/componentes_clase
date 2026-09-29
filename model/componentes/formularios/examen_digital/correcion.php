@@ -13,8 +13,9 @@ $respuesta2 = $datos['respuesta2'];
 $respuesta3 = $datos['respuesta3'];
 $respuesta4 = $datos['respuesta4'];
 $respuesta5 = $datos['respuesta5'];
+$idExamen = $datos['idOculto'];
 
-$query = mysqli_query($conexion,'INSERT INTO respuestas (nombre_estudiante,identificacion,respuesta1,respuesta2,respuesta3,respuesta4,respuesta5) VALUES ("'.$nombreEstudiante.'",'.$identificacionEstudiante.',"'.$respuesta1.'","'.$respuesta2.'","'.$respuesta3.'","'.$respuesta4.'","'.$respuesta5.'")') or die ("Error en la la consulta".mysql_error($conexion));
+$query = mysqli_query($conexion,'INSERT INTO respuestas (nombre_estudiante,identificacion,respuesta1,respuesta2,respuesta3,respuesta4,respuesta5,id_examen) VALUES ("'.$nombreEstudiante.'",'.$identificacionEstudiante.',"'.$respuesta1.'","'.$respuesta2.'","'.$respuesta3.'","'.$respuesta4.'","'.$respuesta5.'",'.$idExamen.')') or die ("Error en la la consulta".mysql_error($conexion));
 
 $res =["res"=> "ko", "message" => "Ha ocurrido un error"];
 
