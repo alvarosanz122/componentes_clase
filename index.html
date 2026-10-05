@@ -22,7 +22,7 @@
             <!-- place navbar here -->
         </header>
         <main>
-          <form action="" method="post">  
+          <form name="login" method="post">  
         <div class="container border border-black border-3 rounded-5 bg-danger login opacity-75">
             <div class="row d-flex justify-content-center p-5">
                 <div class="col-6">
@@ -50,15 +50,7 @@
                 />
             </div>
             <div class="mb-3  text-center">
-                <a
-                name=""
-                id=""
-                class="btn btn-primary"
-                href="#"
-                role="button"
-                >Entrar</a
-            >
-
+              <button type="button" onclick="loginUser()" class="btn btn-primary">Entrar</button>
             </div>
             
 
@@ -80,7 +72,7 @@
         <footer>
             <!-- place footer here -->
         </footer>
-        
+        <script src="views/javascript.js"></script>
         <!-- Bootstrap JavaScript Bundle (includes Popper) -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

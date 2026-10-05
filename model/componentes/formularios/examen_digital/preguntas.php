@@ -1,5 +1,5 @@
 <?php
-$conexion = mysqli_connect("127.0.0.1:3307","root","","examen") or die ("Error en la conexión");
+$conexion = mysqli_connect("localhost","root","","examen") or die ("Error en la conexión");
 
 $res =["res"=> "ko","message"=>"El examen ya fue entregado"];
 

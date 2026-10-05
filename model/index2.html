@@ -17,178 +17,317 @@
 
     <body>
         <header>
-            <nav
-                class="navbar navbar-expand-sm navbar-light bg-warning"
-            >
-                <div class="container">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button
-                        class="navbar-toggler d-lg-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapsibleNavId"
-                        aria-controls="collapsibleNavId"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
+<nav class="navbar navbar-expand-xxl navbar-light bg-warning">
+
+    <div class="container-fluid px-2">
+
+        <!-- LOGO -->
+        <a class="navbar-brand" href="#">
+            Navbar
+        </a>
+
+        <!-- BOTÓN MÓVIL -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- MENÚ -->
+        <div
+            class="collapse navbar-collapse"
+            id="collapsibleNavId"
+        >
+
+            <ul class="navbar-nav me-auto">
+
+                <!-- HOME -->
+                <li class="nav-item">
+                    <a
+                        class="nav-link active"
+                        href="#"
+                        aria-current="page"
                     >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" aria-current="page"
-                                    >Home
-                                    <span class="visually-hidden">(current)</span></a
-                                >
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Plantillas web</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="http://localhost/componentes/model/plantillas/login/index.php"
-                                        >login</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >header</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >footer</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >páginas</a
-                                    >
-                                </div>
-                            </li>
-                             <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Aplicaciones web</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>
-                             <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Componentes web</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="componentes/tabla/index.php"
-                                        ><i class="bi bi-table"></i> Tablas Dinámicas</a
-                                    >
-                                    <a class="dropdown-item" href="componentes/formularios/index.php"
-                                        >Formularios</a
-                                    >
-                                </div>
-                            </li>
-                             <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Intelegencia artificial</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Realidad Aumentada (RA)</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a
-                                    class="nav-link dropdown-toggle"
-                                    href="#"
-                                    id="dropdownId"
-                                    data-bs-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    >Realidad Virtual (RV)</a
-                                >
-                                <div
-                                    class="dropdown-menu"
-                                    aria-labelledby="dropdownId"
-                                >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 1</a
-                                    >
-                                    <a class="dropdown-item" href="#"
-                                        >Action 2</a
-                                    >
-                                </div>
-                            </li>
-                        </ul>
+                        Home
+                    </a>
+                </li>
+
+
+                <!-- PLANTILLAS WEB -->
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownPlantillas"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Plantillas web
+                    </a>
+
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownPlantillas"
+                    >
+                        <a
+                            class="dropdown-item"
+                            href="http://localhost/componentes/model/plantillas/paginasweb/index.php"
+                        >
+                            Paginas Web
+                        </a>
+                        <a
+                            class="dropdown-item"
+                            href="http://localhost/componentes/model/plantillas/login/index.php"
+                        >
+                            Login
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Header
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Footer
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Páginas
+                        </a>
+
                     </div>
-                </div>
-            </nav>
+
+                </li>
+
+
+                <!-- APLICACIONES WEB -->
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownAplicaciones"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Aplicaciones web
+                    </a>
+
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownAplicaciones"
+                    >
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 1
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 2
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- COMPONENTES WEB -->
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownComponentes"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Componentes web
+                    </a>
+
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownComponentes"
+                    >
+
+                        <a
+                            class="dropdown-item"
+                            href="componentes/tabla/index.php"
+                        >
+                            <i class="bi bi-table"></i>
+                            Tablas Dinámicas
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="componentes/formularios/index.php"
+                        >
+                            Formularios
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- INTELIGENCIA ARTIFICIAL -->
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownIA"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Inteligencia artificial
+                    </a>
+
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownIA"
+                    >
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 1
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 2
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- REALIDAD AUMENTADA -->
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownRA"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Realidad Aumentada (RA)
+                    </a>
+
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownRA"
+                    >
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 1
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 2
+                        </a>
+
+                    </div>
+
+                </li>
+
+
+                <!-- REALIDAD VIRTUAL -->
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownRV"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        Realidad Virtual (RV)
+                    </a>
+
+                    <div
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownRV"
+                    >
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 1
+                        </a>
+
+                        <a
+                            class="dropdown-item"
+                            href="#"
+                        >
+                            Action 2
+                        </a>
+
+                    </div>
+
+                </li>
+
+            </ul>
+
+
+            <!-- BOTÓN -->
+            <button class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modalId">
+                Suscribirse
+            </button>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
             
         </header>
         <main>
             <div class="container mt-5 mb-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
+  <div class="col-6 col-xl-4">
     <div class="card h-100">
       <img src="../views/img/pagina.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
@@ -198,7 +337,7 @@
   
     </div>
   </div>
-  <div class="col">
+  <div class="col-6 col-md-4 col-xl-4">
     <div class="card h-100">
       <img src="../views/img/aplicaciones.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
@@ -206,7 +345,7 @@
       </div>
     </div>
   </div>
-  <div class="col">
+  <div class="col-6 col-md-4 col-xl-4">
     <div class="card h-100">
       <img src="../views/img/frameworks.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
@@ -214,7 +353,7 @@
       </div>
     </div>
   </div>
-  <div class="col">
+  <div class="col-6 col-md-4 col-xl-4">
     <div class="card h-100">
       <img src="../views/img/inteligencia.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
@@ -222,7 +361,7 @@
       </div>
     </div>
   </div>
-  <div class="col">
+  <div class="col-6 col-md-4 col-xl-4">
     <div class="card h-100">
       <img src="../views/img/hosteleria.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
@@ -230,7 +369,7 @@
       </div>
     </div>
   </div>
-  <div class="col">
+  <div class="col-6 col-md-4 col-xl-4">
     <div class="card h-100">
       <img src="../views/img/deportes.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
@@ -242,6 +381,60 @@
             
 </div>
 
+            <!-- Modal trigger button -->
+           
+            
+            <!-- Modal Body -->
+            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+            <div
+                class="modal fade"
+                id="modalId"
+                tabindex="-1"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                
+                role="dialog"
+                aria-labelledby="modalTitleId"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm"
+                    role="document"
+                >
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalTitleId">
+                                Modal title
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="modal-body">Body</div>
+                        <div class="modal-footer">
+                            <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                            >
+                                Close
+                            </button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Optional: Place to the bottom of scripts -->
+            <script>
+                const myModal = new bootstrap.Modal(
+                    document.getElementById("modalId"),
+                    options,
+                );
+            </script>
               
 
 

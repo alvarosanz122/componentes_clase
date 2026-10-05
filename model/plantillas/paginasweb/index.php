@@ -22,14 +22,14 @@
 
         </header>
         <main>
-            <h1 class="text-center mt-5"> <i class="bi bi-layout-text-window"></i><br> Formularios</h1>
+            <h1 class="text-center mt-5"> <i class="bi bi-globe"></i><br> Paginas web</h1>
             <div class="container mt-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col">
     <div class="card h-100">
       <img src="img/plantilla_formulario_hospital.png" class="card-img-top h-100 img-fluid" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Formulario medico </span><br>
+        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Pagina Personal </span><br>
     <!-- Modal trigger button -->
     <button
         type="button"
@@ -174,7 +174,7 @@
     <div class="card h-100">
       <img src="img/plantilla_formulario_buscador_01.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Buscador </span><br>
+        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Landing Page </span><br>
        <button
         type="button"
         class="btn btn-primary btn-lg mt-2 botonTabla"
@@ -189,7 +189,7 @@
     <div class="card h-100">
       <img src="img/plantilla_fomulario_examan_digital.jpg" class="card-img-top h-100" alt="...">
       <div class="card-body">
-        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Examen digital </span><br>
+        <h5 class="card-title text-center"><span style="font-family: Arial, Helvetica, sans-serif;" class="text-primary fw-bold">Pagina Corporativa </span><br>
        <button
         type="button"
         class="btn btn-primary btn-lg mt-2 botonTabla"

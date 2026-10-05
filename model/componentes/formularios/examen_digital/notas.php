@@ -1,5 +1,5 @@
 <?php 
-$conexion = mysqli_connect("127.0.0.1:3307","root","","examen") OR die('error de conexion');
+$conexion = mysqli_connect("localhost","root","","examen") OR die('error de conexion');
 
 $datos = json_decode(file_get_contents("php://input"), true);
 

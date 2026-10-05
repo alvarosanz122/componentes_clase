@@ -1,6 +1,8 @@
 ul{
 list-style-type: none;
-
+ text-decoration: none;
+  position: sticky;
+top: 0;
 }
 
 li a{
@@ -8,15 +10,11 @@ li a{
     text-decoration: none;
 }
 
-@media (min-width: 1199px) {
-  .pantalla-completa {
-  height: 100dvh;  
-  
-}
-}
+
+@media (min-width: 1200px){
+  .pantalla-completa{
+       height:100vh; 
+    }
+} 
 
 
-.enlace {
-  text-decoration: none;
-  position: sticky;
-}
